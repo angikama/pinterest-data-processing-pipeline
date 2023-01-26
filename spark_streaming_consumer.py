@@ -48,7 +48,7 @@ stream_df_3 = stream_df_2.select(from_json(col("value"),schema).alias("stream"))
 stream_df_4 = stream_df_3.select("stream.*")
 
 properties = {
-        "user":"postgres", "password":"techangie", "driver":"org.postgresql.Driver"
+        "user":"postgres", "password":"PASSWORD", "driver":"org.postgresql.Driver"
 }
 
 def foreach_batch_function(df, epoch_id):
