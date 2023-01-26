@@ -14,8 +14,8 @@ conf = SparkConf() \
 sc=SparkContext(conf=conf)
 
 # Configure the setting to read from the S3 bucket
-accessKeyId="AKIAYQNMAKEVQI2AAMFZ"
-secretAccessKey="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"
+accessKeyId="access_key"
+secretAccessKey="secret_access_key"
 hadoopConf = sc._jsc.hadoopConfiguration()
 hadoopConf.set('fs.s3a.access.key', accessKeyId)
 hadoopConf.set('fs.s3a.secret.key', secretAccessKey)
